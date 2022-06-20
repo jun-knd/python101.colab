@@ -33,10 +33,6 @@ https://colab.research.google.com/
 ```
 <a href="https://colab.research.google.com/github/jun-knd/python101.colab/blob/main/Python101.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-## 👇GitHubは以下参照下さい。
-https://github.com/jun-knd/python101.colab
-
-
 
 # Python コードサンプル①
 ## 数値計算
@@ -96,3 +92,6 @@ mpf.plot(df, title=stock_code, type='candle', mav=(5, 25), volume=True)
 ```
 !pip install mplfinance
 ```
+
+## 👇GitHubは以下参照下さい。
+https://github.com/jun-knd/python101.colab
