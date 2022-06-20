@@ -9,10 +9,19 @@ https://colab.research.google.com/
   - GPU への無料アクセス
 
 ## Colabの設定
+ランタイム-ランタイムのタイプを変更からGPUを指定可能。  
+
+![image](https://user-images.githubusercontent.com/38905609/174577446-94111208-5da7-4b03-9673-fef83d57c7ad.png)
+![image](https://user-images.githubusercontent.com/38905609/174577869-26de9308-dcde-4760-9086-4c56652cfb17.png)
+
+
+
 ツール-設定 から環境設定可能。  
 パワーレベル、コーギーモード、猫モード、カニモードを必要に応じて設定すると良いでしょう。
 ![image](https://user-images.githubusercontent.com/38905609/174462253-046191a2-7762-4940-9590-080c3266b2c3.png)
 ![image](https://user-images.githubusercontent.com/38905609/174462281-654bee21-ee70-4cdb-a5c9-48edf2fa02f9.png)
+
+
 
 ## GitHubをColabから開く
 下記リンクを記載することで、`Open in Colab`のリンクを設定できます。
