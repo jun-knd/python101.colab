@@ -4,6 +4,7 @@
 https://colab.research.google.com/
 
 ## Colabの特徴
+  - Webブラウザ上の開発環境
   - 環境構築が不要
   - GPU への無料アクセス
 
@@ -23,5 +24,66 @@ https://colab.research.google.com/
 ```
 <a href="https://colab.research.google.com/github/jun-knd/python101.colab/blob/main/Python101.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-👇GitHubは以下参照下さい。
+## 👇GitHubは以下参照下さい。
 https://github.com/jun-knd/python101.colab
+
+
+
+# Python コードサンプル①
+## 数値計算
+$x = a \times b$
+
+下記コードサンプルは単純に積を求める。
+```
+x = 160 * 10000
+print("掛け算")
+print(x)
+print("フォーマット")
+print("{:,}".format(x))
+```
+
+
+# Python コードサンプル②
+## round関数は四捨五入ではない
+## 四捨五入は`Decimal#quantize()`を利用する
+```
+from decimal import Decimal, ROUND_HALF_UP, ROUND_HALF_EVEN
+
+target = 2.5
+
+print("target = 2.5")
+print("round(target)👇")
+print(round(target))
+
+print("あれ?")
+
+print("Decimal(str(target)).quantize(Decimal('0'), rounding=ROUND_HALF_UP)👇")
+print(Decimal(str(target)).quantize(Decimal('0'), rounding=ROUND_HALF_UP))
+print("そうそう！")
+```
+
+# Python コードサンプル③
+## グラフ描画
+```
+# コード領域
+import pandas as pd
+import pandas_datareader.data as web
+import datetime
+import mplfinance as mpf
+
+start = datetime.date(2021,1,1)
+end = datetime.date(2022,6,17)
+
+stock_code = "6502"
+
+stockdata=web.DataReader(stock_code +".JP", "stooq",start,end)
+
+df = stockdata.sort_index()
+mpf.plot(df, title=stock_code, type='candle', mav=(5, 25), volume=True)
+```
+
+モジュール依存関係でエラー発生の場合、`mplfinance`をpipを使ってインストールする。
+
+```
+!pip install mplfinance
+```
