@@ -2,9 +2,6 @@
 
 [Colaboratoryを利用したPython実行環境](https://qiita.com/jun_knd/items/759a717eaf760f2bcf9f)
 
-[keywords]  
-GoogleColaboratory Python  
-
 ## Colaboratory(以下Colab)の特徴
 
 - Webブラウザ上のPython実行開発環境
