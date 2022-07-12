@@ -1,7 +1,5 @@
 # Colaboratoryを利用したPython実行環境
 
-[Colaboratoryを利用したPython実行環境](https://qiita.com/jun_knd/items/759a717eaf760f2bcf9f)
-
 ## Colaboratory(以下Colab)の特徴
 
 - Webブラウザ上のPython実行開発環境
@@ -95,7 +93,7 @@ import datetime
 import mplfinance as mpf
 
 start = datetime.date(2021,1,1)
-end = datetime.date(2022,6,17)
+end = datetime.date(2022,7,14)
 
 stock_code = "6502"
 
@@ -120,6 +118,3 @@ mpf.plot(df, title=stock_code, type='candle', mav=(5, 25), volume=True)
 
 - <https://github.com/jun-knd/python101.colab>
 
-## 👇関連記事
-
-- [Colaboratory と AWSの連携](https://qiita.com/jun_knd/items/fa882dcd23def9c5ac52)
